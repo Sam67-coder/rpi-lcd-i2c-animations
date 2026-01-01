@@ -1,5 +1,22 @@
-from rpi_lcd_i2c import I2cLcd
-from rpi_lcd_i2c_animations import animate_67
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
 
-lcd = I2cLcd(1, 0x27, 2, 16)
-animate_67(lcd)
+[project]
+name = "rpi-lcd-i2c-animations"
+version = "0.1.0"
+description = "LCD animation add-ons for rpi_lcd_i2c"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+  { name = "Sammy" }
+]
+
+dependencies = [
+  "rpi-lcd-i2c"
+]
+
+[project.urls]
+Homepage = "https://github.com/Sam67-coder/rpi_lcd_i2c_animations"
+Repository = "https://github.com/Sam67-coder/rpi_lcd_i2c_animations"
